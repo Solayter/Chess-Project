@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Online Chess</title>
+		<link rel="stylesheet" type="text/css" href="chess.css"/>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="chess.js"></script> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+	<body class="page">
+		<div class="back"> 
+			<div class="start">
+				<input class="buttonNewGame"  type="button" value="Новая игра" onClick="newGame()" /></br></br>
+				<input id="input" class="textID" type="text" placeholder="Номер сессии" onInput="this.value = this.value.replace(/\D/g, '')"/>
+				<input class="buttonJoin" type="submit" value="Присоединиться" onClick="joinGame()"/>
+			</div>
+		</div>
+	</body>
+</html>
